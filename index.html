@@ -65,6 +65,44 @@
         <!-- Add your site or application content here -->
 		<div style="max-height:25%;max-width:100%"><img src="img/LogoResize.png"></div>
 		<div id="mapholder" style="max-height:100%;;max-width:100%"></div>
+
+ <div style="max-height:25%;max-width:100%">
+ 
+ <form id="contact-form">
+                  <div class="contact-form-loader"></div>
+                  <fieldset>
+                   
+                   
+                  
+                    <label class="authcode">
+                      <input name="phone" type="text" placeholder="Authentication code" value="" size="45" data-constraints="@Required @JustNumbers" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a Authorisation code.</span>
+                    </label>
+                   
+                    
+                    <div class="ta__right">
+                      <a href="#" class="btn" data-type="reset">CLEAR</a>
+                      <a href="#" class="btn" data-type="submit">SEND</a>
+                    </div>
+                  </fieldset> 
+                  <div class="modal fade response-message">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          You Authorisation code has been accepted.
+                        </div>      
+                      </div>
+                    </div>
+                  </div>
+                </form>   
+</div>
+
+
 		<div style="max-heightheight:25%;;max-width:100%"><img src="img/ClickButton.png" onclick="getLocation()"></div>
 		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
