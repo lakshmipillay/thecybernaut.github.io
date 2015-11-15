@@ -68,16 +68,12 @@
 
  <div style="max-height:25%;max-width:100%">
  
- <form id="contact-form">
-                  <div class="contact-form-loader"></div>
+<form action="http://thecybernaut.github.io/formmail.php" method="post" name="formMail" id="contact-form">
                   <fieldset>
-                   
-                   
-                  
                     <label class="authcode">
-                      <input name="phone" type="text" placeholder="Authentication code" value="" size="45" data-constraints="@Required @JustNumbers" />
-                      <span class="empty-message">*This field is required.</span>
-                      <span class="error-message">*This is not a Authorisation code.</span>
+                      <input name="authcode" type="text" placeholder="Authentication code" value="" size="45" data-constraints="@Required @JustNumbers" />
+                      <span class="empty-message">*Authorisation code required to use App.</span>
+                      <span class="error-message">*This is not a valid Authorisation code.</span>
                     </label>
                    
                     
@@ -90,14 +86,15 @@
                       <div class="modal-content">
                         <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h4 class="modal-title">Modal title</h4>
+                          <h4 class="modal-title">Authorisation</h4>
                         </div>
                         <div class="modal-body">
-                          You Authorisation code has been accepted.
+                          accepted.
                         </div>      
                       </div>
                     </div>
-                  </div>
+                    </div>
+                 
                 </form>   
 </div>
 
