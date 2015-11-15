@@ -23,6 +23,8 @@
 		var x = document.getElementById("demo");
 
 		function getLocation() {
+			document.getElementById("logoid").src = "img/SIMOBLogoHeader.jpg";
+
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(showPosition, showError);
 			} else {
@@ -63,7 +65,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-		<div style="max-height:25%;max-width:100%"><img src="img/LogoResize.png"></div>
+		<div style="max-height:25%;max-width:100%"><img id="logoid" src="img/LogoResize.png"></div>
 		<div id="mapholder" style="max-height:100%;;max-width:100%"></div>
 		<div style="max-heightheight:25%;;max-width:100%"><img src="img/ClickButton.jpg" onclick="getLocation()"></div>
 		
